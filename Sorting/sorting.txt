@@ -1,0 +1,2 @@
+sorting algorithms learned till now: selection sort, insertion sort, bubble sort, merge sort
+yet to learn: quick sort 
