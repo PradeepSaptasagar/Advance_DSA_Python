@@ -1,2 +1,2 @@
-sorting algorithms learned till now: selection sort, insertion sort, bubble sort, merge sort
-yet to learn: quick sort 
+sorting algorithms learned till now: selection sort, insertion sort, bubble sort, merge sort, quick sort
+learned all the sorting algorithms, codes upcoming for all these algorithms along with their time and space complexity
