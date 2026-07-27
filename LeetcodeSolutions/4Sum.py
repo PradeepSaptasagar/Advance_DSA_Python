@@ -26,3 +26,5 @@ class Solution:
                         while left<right and nums[right]==nums[right+1]:
                             right-=1
         return result
+
+# Time complexity=O(N^3), Space complexity=O(1)
