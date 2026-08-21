@@ -4,3 +4,6 @@ upcoming new notes and leetcode solutions :)
 more notes upcoming
 
 doubly linked list notes upcoming with all insertion, deletion, and traversal along with the time complexity and space complexity for every bit
+
+
+singly linked list codes upcoming notes
