@@ -9,3 +9,5 @@ doubly linked list notes upcoming with all insertion, deletion, and traversal al
 singly linked list codes upcoming notes
 
 notes on the way :))
+
+will be solving daily 1 leetcode question................maintaining consistency :)
