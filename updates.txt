@@ -11,3 +11,6 @@ singly linked list codes upcoming notes
 notes on the way :))
 
 will be solving daily 1 leetcode question................maintaining consistency :)
+
+
+notes on the way(:)
