@@ -17,3 +17,5 @@ notes on the way(:)
 
 
 singly linked list notes coming very soon :))
+
+more leetcode solutions upcoming :)
