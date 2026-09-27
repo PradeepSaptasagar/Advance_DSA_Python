@@ -26,3 +26,5 @@ been inactive for some time, but more notes and leetcode solutions on the way :)
 apologies for the delay, but more leetcode solutions and notes incoming, stay tuned :)
 
 notes on the way
+
+finding new methods of solving leetcode questions:)
