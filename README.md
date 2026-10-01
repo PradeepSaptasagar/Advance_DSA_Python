@@ -1,6 +1,6 @@
 # 🧠 Advance DSA Python
 
-> **A practical collection of Data Structures & Algorithms in Python — built through implementation, problem solving, and coding practice.**
+> **A practical collection of Data Structures & Algorithms in Python - built through implementation, problem solving, and coding practice.**
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python\&logoColor=white)](https://www.python.org/)
 [![DSA](https://img.shields.io/badge/Focus-Data%20Structures%20%26%20Algorithms-orange)](https://github.com/PradeepSaptasagar/Advance_DSA_Python)
