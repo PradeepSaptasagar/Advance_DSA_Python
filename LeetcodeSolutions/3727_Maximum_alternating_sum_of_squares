@@ -1,0 +1,86 @@
+class Solution:
+    def maxAlternatingSum(self, nums: List[int]) -> int:
+        temp = []
+        for i in nums:
+            k = i ** 2
+            temp.append(k)
+
+        temp.sort()
+        mid = len(temp) // 2
+        
+        return sum(temp[mid:]) - sum(temp[:mid])
+
+# alternate solution
+
+class Solution:
+    def maxAlternatingSum(self, nums: List[int]) -> int:
+        n = len(nums)
+        
+        # Square directly into the original array
+        for i in range(n):
+            nums[i] = nums[i] ** 2
+            
+        # Sort the original array in-place
+        nums.sort()
+        
+        mid = n // 2
+        total = 0
+        
+        # Calculate the sum without using memory-heavy slices
+        for i in range(n):
+            if i < mid:
+                total -= nums[i]
+            else:
+                total += nums[i]
+                
+        return total
+
+# below solution will create a time limit exceeded for few test cases
+
+import random
+class Solution:
+    def maxAlternatingSum(self, nums: List[int]) -> int:
+        n = len(nums)
+        
+        for i in range(n):
+            nums[i] = nums[i] ** 2
+            
+        mid = n // 2
+        
+        # Iterative Quickselect
+        left, right = 0, n - 1
+        while left <= right:
+            # Pick a random pivot to avoid worst-case scenarios
+            pivot_idx = random.randint(left, right)
+            pivot_val = nums[pivot_idx]
+            
+            # Swap pivot to the far right to get it out of the way
+            nums[pivot_idx], nums[right] = nums[right], nums[pivot_idx]
+            
+            # Move all numbers smaller than pivot to the left side
+            p = left
+            for i in range(left, right):
+                if nums[i] < pivot_val:
+                    nums[p], nums[i] = nums[i], nums[p]
+                    p += 1
+                    
+            # Put the pivot in its final, sorted resting place
+            nums[p], nums[right] = nums[right], nums[p]
+            
+            # If the pivot landed exactly in the middle, our array is perfectly halved!
+            if p == mid:
+                break
+            elif p < mid:
+                left = p + 1  # The middle is further right
+            else:
+                right = p - 1 # The middle is further left
+                
+        # Sum the partitioned halves
+        total = 0
+        for i in range(n):
+            if i < mid:
+                total -= nums[i]
+            else:
+                total += nums[i]
+                
+        return total
