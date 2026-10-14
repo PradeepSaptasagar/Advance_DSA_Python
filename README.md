@@ -439,4 +439,4 @@ https://github.com/PradeepSaptasagar/Advance_DSA_Python
 
 ---
 
-> **Learn the concept. Write the code. Solve the problem. Repeat.**
+> **Learn the concept. Understand the pattern. Write the code. Solve the problem. Repeat.**
