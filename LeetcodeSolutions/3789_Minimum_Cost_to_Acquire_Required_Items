@@ -1,0 +1,22 @@
+ans=0
+ansextra=0
+finalans=0
+if costBoth<=cost1+cost2:
+    if need1<=need2:
+ans=costBoth*need1
+remainingneed2 = need2-need1
+if (costBoth*remainingneed2)<=(cost2*remainingneed2):
+    ansextra=(costBoth*remainingneed2)
+else:
+    ansextra=(cost2*remainingneed2)
+    elif need2<=need1:
+ans=costBoth*need2
+remainingneed1 = need1-need2
+if (costBoth*remainingneed1)<=(cost1*remainingneed1):
+    ansextra=(costBoth*remainingneed1)
+else:
+    ansextra=(cost1*remainingneed1)
+else:
+    ans=(need1*cost1)+(need2*cost2)
+finalans=ans+ansextra
+return finalans
